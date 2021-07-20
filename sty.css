@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=PT+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*font-family: 'Noto Sans', sans-serif;*/
+    font-family: 'PT Sans', sans-serif;
+}
+
+body{
+    background: rgb(75, 174, 250);
+}
+
+
+.base{
+    background:#fff;
+    margin: 120px auto;
+    width: 90%;
+    max-width: 400px;
+    padding: 25px;
+    border-radius: 7px;
+}
+
+.base header{
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.base .input{
+    display: flex;
+    width: 100%;
+    height: 35px;
+    margin-bottom: 15px;
+
+}
+
+.base .list{
+    max-height: 250px;
+    overflow: auto;
+}
+
+.input input{
+    width: 100%;
+    margin-left: 2px;
+    font-size: 15px;
+    padding-left: 5px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    outline: none;
+}
+
+.input button{
+    height: 100%;
+    width: 40px;
+    border: none;
+    outline: none;
+    background: rgb(127, 41, 240);
+    color: #fff;
+    margin-left: 5px;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.input button.active{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.list li{
+    list-style: none;
+    line-height: 45px;
+    font-size: 17px;
+    position: relative;
+    background: rgb(238, 238, 238);
+    border-radius: 5px;
+    margin-bottom: 7px;
+    padding: 0px 10px;
+    overflow: hidden;
+}
+
+.list li span{
+    position: absolute;
+    right: -50px;
+    color: #fff;
+    background: rgb(245, 36, 36);
+    width: 10%;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0px 5px 5px 0px;
+    transition: all 0.3s ease;
+}
+
+.list li:hover span{
+    right: 0px;
+}
+
+
+.base .footer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    font-size: 17px;
+    align-items: center;
+}
+
+.footer button{
+    border: none;
+    outline: none;
+    background: rgb(127, 41, 240);
+    color: #fff;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 6px 10px;
+    opacity: 0.5;
+    pointer-events: none;
+
+}
+
+.footer button.active{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.follow{
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+    font-size: 12px;
+}
