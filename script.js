@@ -6,11 +6,11 @@ const delall=document.querySelector(".footer button")
 tasklist();
 
 input.onkeyup = ()=>{
-    let userdata = input.value; //getting user entered value
-    if(userdata.trim() != 0){ //if the user value isn't only spaces
-      addbtn.classList.add("active"); //active the add button
+    let userdata = input.value;
+    if(userdata.trim() != 0){ 
+      addbtn.classList.add("active"); 
     }else{
-      addbtn.classList.remove("active"); //unactive the add button
+      addbtn.classList.remove("active"); 
     }
 }
 
