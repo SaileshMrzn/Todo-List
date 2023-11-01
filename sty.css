@@ -10,6 +10,7 @@
 body{
     background: rgb(75, 174, 250);
     height: 100vh;
+    display: flex;
 }
 
 
